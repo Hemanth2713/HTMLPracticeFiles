@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: beige;
+            height: 650px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: #80ece3;
+            width: 330px;
+            height: 330px;
+            border: 2px dotted brown;
+            margin: 5px;
+            padding: 5px;
+
+            /* ============================================
+               Box Shadow: Adds shadow effects to elements
+               ============================================ */
+            /* Syntax: box-shadow: [x-offset] [y-offset] [blur-radius] [spread-radius] [color]; 
+               - x-offset: Horizontal shadow position (positive = right, negative = left). 
+               - y-offset: Vertical shadow position (positive = down, negative = up). 
+               - blur-radius (optional): Controls the shadow's blur effect (higher value = softer shadow). 
+               - spread-radius (optional): Expands or contracts the shadow size. 
+               - color: Defines the shadow color. */
+
+            /* Example 1: Simple shadow */
+            /* box-shadow: 10px 10px grey;  */
+            /* 10px on the x-axis, 10px on the y-axis, creating a basic shadow effect. */
+
+            /* Example 2: Negative shadow values */
+            /* box-shadow: -10px -10px grey; */
+            /* Moves the shadow in the opposite direction on both the x-axis and y-axis. */
+
+            /* Example 3: Shadow with blur effect */
+            /* box-shadow: 10px 10px 5px grey; */
+            /* 10px on the x-axis, 10px on the y-axis, and 5px as the blur radius. */
+
+            /* Example 4: Inset shadow */
+            /* box-shadow: inset 10px 5px 10px grey; */
+            /* 10px on the x-axis, 5px on the y-axis, 10px blur radius, with 'inset' making the shadow appear inside the element. */
+
+            /* Example 5: Multiple colored shadows */
+            box-shadow: 10px 8px 5px grey, 15px 15px 10px greenyellow;
+            /* First shadow: 10px x-offset, 8px y-offset, 5px blur, grey color. */
+            /* Second shadow: 15px x-offset, 15px y-offset, 10px blur, greenyellow color. */
+        }
+        #head1{
+            text-shadow: 2px 3px 2px rgb(1, 14, 201);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2CHYnJ3FPo7FHvUlmcM18L3d05RewWN1bvw&s" alt="">
+            <h1 id="head1">Shadows Example</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis fugit,
+                delectus pariatur possimus aut consequuntur esse corrupti necessitatibus non 
+                maiores ullam repellat! Harum ab rerum ipsam aliquid in magnam porro ducimus 
+                non, doloribus mollitia rem adipisci iusto sunt voluptas?</p>
+        </div>
+    </div>
+</body>
+</html>

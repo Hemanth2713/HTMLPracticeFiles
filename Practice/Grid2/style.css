@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,200px);
+    gap: 0.4rem;
+    padding: 4rem;
+    border: 3px solid white;
+}
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: #e2ad7e;
+    border: 5px solid beige;
+   font: 3em solid;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    justify-self: end;/*If we give as start it will place in the right most to the cell
+                        If we give it as center then it will place at the center to the cell
+                        If we give eit as end then it will place the left most to the cell 
+                        If we give it as stretch then it will exp*/
+}

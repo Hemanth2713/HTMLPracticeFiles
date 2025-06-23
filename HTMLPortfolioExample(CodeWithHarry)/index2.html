@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: black;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        color: white;
+      }
+
+      .header {
+        background-color: black;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.66);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.66);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0 25px;
+      }
+
+      .leftheader {
+        font-weight: 700;
+        font-size: 26px;
+      }
+
+      .rightheader {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+
+      .rightheader li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .rightheader li a:hover {
+        color: rgb(124, 102, 232);
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 25px;
+        min-height: 80vh;
+      }
+
+      .leftContainer,
+      .rightContainer {
+        flex: 1 1 300px;
+        margin: 20px;
+      }
+
+      .leftContainer h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      .leftContainer div {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      #purple {
+        color: rgb(124, 102, 232);
+      }
+
+      #element {
+        display: block;
+        margin-top: 10px;
+        font-size: 20px;
+        color: rgb(137, 137, 234);
+      }
+
+      .rightContainer img {
+        width: 100%;
+      }
+
+      hr {
+        border: 1px solid rgba(255, 255, 255, 0.66);
+        margin: 20px 25px;
+      }
+
+      .secondContainer {
+        max-width: 80vw;
+        margin: auto;
+        padding: 20px 0;
+        color: white;
+      }
+
+      .secondContainer h1 {
+        font-size: 2rem;
+        margin: 10px 0;
+      }
+
+      .text-gray {
+        font-size: 0.8rem;
+        color: gray;
+      }
+
+      .box {
+        max-width: 100%;
+        height: 2px;
+        background-color: white;
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      }
+
+      .vertical {
+        width: 1px;
+        height: 100px;
+        background-color: white;
+        position: relative;
+      }
+
+      .image-top {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: -32px;
+        left: -14px;
+      }
+
+      .vertical-title {
+        position: absolute;
+        top: 70px;
+        left: -60px;
+        width: 150px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .vertical-desc {
+        position: absolute;
+        top: 90px;
+        left: -60px;
+        width: 150px;
+        text-align: justify;
+        font-size: 10px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="leftheader">Portfolio Website</div>
+        <ul class="rightheader">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="leftContainer">
+          <h2>This is an example portfolio</h2>
+          <div>
+            Hi, my name is <span id="purple">Hemanth</span>. I am a passionate
+          </div>
+          <span id="element"></span>
+        </div>
+        <div class="rightContainer">
+          <img src="developer.png" alt="Portfolio image" />
+        </div>
+      </section>
+      <hr />
+
+      <section class="secondContainer">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img src="image.png" alt="HTML Developer Icon" class="image-top" />
+            <div class="vertical-title">HTML Developer (2022-2023)</div>
+            <div class="vertical-desc">
+              Developed responsive, pixel-perfect web pages using HTML5, CSS3,
+              and JavaScript, ensuring cross-browser compatibility.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              src="image.png"
+              alt="Java Spring Boot Developer Icon"
+              class="image-top"
+            />
+            <div class="vertical-title">
+              Java Spring Boot Developer (2021-2022)
+            </div>
+            <div class="vertical-desc">
+              Built and deployed scalable Java Spring Boot backend services with
+              RESTful APIs, optimized for performance and security.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="image.png" alt="SQL Developer Icon" class="image-top" />
+            <div class="vertical-title">SQL Developer (2020-2021)</div>
+            <div class="vertical-desc">
+              Optimized complex SQL queries and developed stored procedures for
+              efficient data retrieval and integrity.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="image.png" alt="React Developer Icon" class="image-top" />
+            <div class="vertical-title">React Developer (2019-2020)</div>
+            <div class="vertical-desc">
+              Created dynamic, responsive React.js user interfaces with reusable
+              components and optimized RESTful API integration.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- Typed.js Animation -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Web Designer", "Backend Developer"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true,
+        showCursor: true,
+        cursorChar: "|",
+      });
+    </script>
+  </body>
+</html>

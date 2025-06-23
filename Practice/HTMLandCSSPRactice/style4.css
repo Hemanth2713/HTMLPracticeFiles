@@ -1,0 +1,40 @@
+h1 {
+    font-family: Impact, sans-serif;
+    color: #CE5937;
+     background-color:aqua;
+      /*  border-style:solid;
+      border-width:2px;
+      border-color:black; */
+      border:solid black 2px; /* It is a short hand notation format of above code */
+      border-radius:10px; /* This is used to reduce the border corner there are
+                           * so many options like border-top,
+                             border-bottom-left-radius etc */
+      width:200px;
+      height:50px;
+    }
+    #firstPara{
+     background-color:blanchedalmond;
+     border:solid black 2px;
+      border-radius:10px;
+      padding:50px;
+    margin:100px;
+    }
+    #secondPara{
+        background-color:beige;
+     border:solid black 2px;
+      /* padding-left:10px;
+      padding-top:30px;
+      padding-right:20px;
+      padding-bottom:40px; */
+    padding:30px 20px 40px 10px; /* Shorthand notation for padding same as above commented code */
+    /*   padding: 20px 40px; 20px is for y-axis top and bottom 40px is for x-axis left adn right
+       */  
+      margin: 50px 100px 150px 50px;
+     }
+    /* Universal selector margin and padding by default kept as 0px
+      ->syntax  *{
+                  padding:0;
+                  margin:0;
+                 }  
+        box-sizing: border-box; By using this the size of the entire remains same, the content shrink here it will not expand  i.e, if the width of the content is specified and if we add padding them the padding width will be calculated in the entire width it will not create extra width (it will not perfom content width+padding width) ,if we not mention box-sizing then the size varys like content width + paddingpadding in this format
+     */

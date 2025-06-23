@@ -1,0 +1,46 @@
+/* Font Styles*/
+h1 {
+    font-family: Impact, sans-serif;
+    color: #CE5937;
+    }
+    p{
+      font-style:italic; /* This format is used to change the font style. */
+      font-size:20px;  /* It is used to change the size of the letters. */
+      font-family:cursive; /* This format is used to change the font style.
+                            *  It is a fallback system i.e., it caintains 2-3 fromat 
+                            * of font styles if one font format is not exits then it 
+                            * will apply the another format */
+    /*   If we want select font family by our own then we can go to google fonts, 
+     * select the font which you like then copy the linka nd paste it in the 
+     * head tag and copy the font family from there and past it at font-family*/   
+      font-weight:900; /* This is used to adjust the thickness of the letters. */
+      line-height:30px /* This is used to maintain gap between the 2 lines */
+    }
+    
+    
+    /* Colors*/
+    #firstPara{
+      background-color:yellow;
+      color:red;
+    }
+    
+    #SecondPara{
+      background-color:rgb(100,109,192);
+    }
+    
+    #thirdPara{
+        background-color:rgba(66,176,86,0.5);
+    /* Here it is in the format of rgba(color,color,color,alpha), here the alpha 
+      value represents the transperency if we mention 0 tthen it will not show 
+      the given colors */
+    }
+    .firstClass{
+       background-color:#ac67bb59;
+    /* Here we are using the hexa decimal format
+    #ffffff -> in this format 1st ff refers to red 2nd ff refers to green
+    3rd ff refers to blue */
+    }
+    .secondClass{
+      background-color:hsl(62,60%,56%);
+    }
+    

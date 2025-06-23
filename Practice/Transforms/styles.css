@@ -1,0 +1,60 @@
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    border: 3px solid black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    /* transition: all <duration> <timing-function> <delay>; */
+    /* Allows smooth transitions on transform properties */
+    transition: all 2s linear 1s;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    /* The last 'transform' property overrides all previous ones.
+       To apply multiple transforms together, they must be combined in a single 'transform' property. */
+
+    /* Rotates the element 45 degrees */
+    /* transform: rotate(45deg); */
+
+    /* Scales the element to twice its size */
+    /* transform: scale(2); */
+
+    /* Shrinks the element to half its size */
+    /* transform: scale(0.5); */
+
+    /* Skews the element by 45 degrees along the X-axis */
+    /* transform: skew(45deg); */
+
+    /* Moves the element 500px to the right and 200px down */
+    /* transform: translate(500px, 200px); */
+
+    /* Moves the element 500px to the right and 500px up */
+    /* transform: translate(500px, -500px); */
+
+    /* Moves the element 500px to the left and 500px up */
+    /* transform: translate(-500px, -500px); */
+
+    /* Moves the element 500px to the left and 500px down */
+    /* transform: translate(-500px, 500px); */
+
+    /* Correct way to apply multiple transformations together */
+    transform: rotate(45deg) scale(0.5) skew(45deg) translate(-500px, 500px);
+}
+
+p {
+    font-size: 36px;
+}

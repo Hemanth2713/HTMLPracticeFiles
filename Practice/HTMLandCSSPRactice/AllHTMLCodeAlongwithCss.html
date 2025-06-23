@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML CSS JS Combined</title>
+    <style>
+      /* CSS1 Styles */
+      /* CSS styles */
+      h1#welcome1 {
+        font-family: Impact, sans-serif;
+        color: #ce5937;
+      }
+      p.css1 {
+        color: brown;
+      }
+      /* If we Specify the id then in the css format we have start it with #idname */
+      #article1 {
+        background-color: green;
+      }
+      /* If we are using the class then we have to specify .classname */
+      .paraClass {
+        background-color: yellow;
+      }
+      /* by using the below format we can grouping format i.e., here we are 
+           setting width size 500px for both paragraph and article */
+      p.css1,
+      article#article1 {
+        width: 500px;
+      }
+      /* This Format is useful that the paragraph and article have the same 
+           names and we want specify the text align center for paragraph only 
+           then we have to use this format */
+      p.paraClass {
+        text-align: center;
+      }
+
+      /* CSS2 Styles */
+      /* Font Styles */
+      h1#welcome2 {
+        font-family: Impact, sans-serif;
+        color: #ce5937;
+      }
+      p.css2 {
+        font-style: italic; /* This format is used to change the font style. */
+        font-size: 20px; /* It is used to change the size of the letters. */
+        font-family: cursive; /* This format is used to change the font style.
+                                  * It is a fallback system i.e., it contains 2-3 format 
+                                  * of font styles if one font format is not exists then it 
+                                  * will apply the another format */
+        /* If we want select font family by our own then we can go to google fonts, 
+             * select the font which you like then copy the link and paste it in the 
+             * head tag and copy the font family from there and past it at font-family */
+        font-weight: 900; /* This is used to adjust the thickness of the letters. */
+        line-height: 30px; /* This is used to maintain gap between the 2 lines */
+      }
+      /* Colors */
+      #firstPara2 {
+        background-color: yellow;
+        color: red;
+      }
+      #secondPara2 {
+        background-color: rgb(100, 109, 192);
+      }
+      #thirdPara2 {
+        background-color: rgba(66, 176, 86, 0.5);
+        /* Here it is in the format of rgba(color,color,color,alpha), here the alpha 
+              value represents the transparency if we mention 0 then it will not show 
+              the given colors */
+      }
+      .firstClass2 {
+        background-color: #ac67bb59;
+        /* Here we are using the hexa decimal format
+            #ffffff -> in this format 1st ff refers to red 2nd ff refers to green
+            3rd ff refers to blue */
+      }
+      .secondClass2 {
+        background-color: hsl(62, 60%, 56%);
+      }
+
+      /* CSS3 Styles */
+      h1#welcome3 {
+        font-family: Impact, sans-serif;
+        color: #ce5937;
+        background-color: aqua;
+        /*  border-style: solid;
+                border-width: 2px;
+                border-color: black; */
+        border: solid black 2px; /* It is a short hand notation format of above code */
+        border-radius: 10px; /* This is used to reduce the border corner there are
+                                   * so many options like border-top,
+                                     border-bottom-left-radius etc */
+        width: 200px;
+        height: 50px;
+      }
+      #firstPara3 {
+        background-color: blanchedalmond;
+        border-style: dotted;
+        border-width: 2px;
+        border-color: black;
+        border-radius: 10px;
+      }
+      #secondPara3 {
+        background-color: beige;
+        border: solid black 2px;
+      }
+      #thirdPara3 {
+        background-color: yellow;
+      }
+
+      /* CSS4 Styles */
+      h1#welcome4 {
+        font-family: Impact, sans-serif;
+        color: #ce5937;
+        background-color: aqua;
+        /*  border-style: solid;
+                border-width: 2px;
+                border-color: black; */
+        border: solid black 2px; /* It is a short hand notation format of above code */
+        border-radius: 10px; /* This is used to reduce the border corner there are
+                                   * so many options like border-top,
+                                     border-bottom-left-radius etc */
+        width: 200px;
+        height: 50px;
+      }
+      #firstPara4 {
+        background-color: blanchedalmond;
+        border: solid black 2px;
+        border-radius: 10px;
+        padding: 50px;
+        margin: 100px;
+      }
+      #secondPara4 {
+        background-color: beige;
+        border: solid black 2px;
+        /* padding-left: 10px;
+               padding-top: 30px;
+               padding-right: 20px;
+               padding-bottom: 40px; */
+        padding: 30px 20px 40px 10px; /* Shorthand notation for padding same as above commented code */
+        /*   padding: 20px 40px; 20px is for y-axis top and bottom 40px is for x-axis left and right
+             */
+        margin: 50px 100px 150px 50px;
+      }
+      /* Universal selector margin and padding by default kept as 0px
+           -> syntax  * {
+                        padding: 0;
+                        margin: 0;
+                      }  
+           box-sizing: border-box; By using this the size of the entire remains same, the content shrink here it will not expand  i.e, if the width of the content is specified and if we add padding then the padding width will be calculated in the entire width it will not create extra width (it will not perform content width+padding width) ,if we not mention box-sizing then the size varies like content width + padding in this format
+         */
+
+      /* CSS5 Styles */
+      h1#welcome5 {
+        font-family: Impact, sans-serif;
+        color: #ce5937;
+      }
+      .box {
+        border: 2px solid black;
+        width: 25%;
+      }
+      .parent {
+        border: 2px solid black;
+        background-color: beige;
+      }
+      .child {
+        border: 2px solid red;
+        background-color: aqua;
+        width: 25%;
+      }
+      .container {
+        border: 2px solid green;
+        background-color: beige;
+        /* view port -> It is the Display of the Desktop, it just size of the desktop window height and width */
+        height: 100vh; /* Here it is displaying the 100% height and by default it is taking width also 100%. If we want we can change the width */
+        width: 50vw;
+      }
+      .container123 {
+        font-size: 10px;
+      }
+      .box123 {
+        font-size: 10em;
+        /* Here the Welcome to CodeHelp! size increased to 100px, because container123 as parent and box123 as child,
+               container width is 10px and box width is 10em, the logic of 10 em is 10*parent size so that’s why it is showing as 100px
+               by default 1em =10px if we not specify any font size value. */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML1 Content -->
+    <h2>Section 1: HTML1 and CSS1</h2>
+    <h1 id="welcome1">HTML CSS JS</h1>
+    <p class="paraClass css1">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <p class="paraClass css1">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <p class="css1">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <article id="article1">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </article>
+
+    <!-- HTML2 Content -->
+    <h2>Section 2: HTML2 and CSS2</h2>
+    <h1 id="welcome2">HTML CSS JS</h1>
+    <p id="firstPara2" class="css2">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    </p>
+    <p id="secondPara2" class="css2">
+      It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout.
+    </p>
+    <p id="thirdPara2" class="css2">
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+      roots in a piece of classical Latin literature from 45 BC, making it over
+      2000 years old.
+    </p>
+    <p class="firstClass2 css2">
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+      roots in a piece of classical Latin literature from 45 BC, making it over
+      2000 years old.
+    </p>
+    <p class="secondClass2 css2">
+      It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout.
+    </p>
+
+    <!-- HTML3 Content -->
+    <h2>Section 3: HTML3 and CSS3</h2>
+    <h1 id="welcome3">HTML CSS JS</h1>
+    <p id="firstPara3">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    </p>
+    <p id="secondPara3">
+      It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout.
+    </p>
+    <p id="thirdPara3">
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+      roots in a piece of classical Latin literature from 45 BC, making it over
+      2000 years old.
+    </p>
+    <p class="firstClass2">
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+      roots in a piece of classical Latin literature from 45 BC, making it over
+      2000 years old.
+    </p>
+    <p class="secondClass2">
+      It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout.
+    </p>
+
+    <!-- HTML4 Content -->
+    <h2>Section 4: HTML4 and CSS4</h2>
+    <h1 id="welcome4">HTML CSS JS</h1>
+    <p id="firstPara4">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    </p>
+    <p id="secondPara4">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    </p>
+
+    <!-- HTML5 Content -->
+    <h2>Section 5: HTML5 and CSS5</h2>
+    <h1 id="welcome5">HTML CSS JS</h1>
+    <p>Welcome to HTML-CSS-JS.com</p>
+    <p>Online HTML, CSS and JavaScript editor with instant preview.</p>
+    <!-- what is size units
+      absolute sizing -> it has fixed size or length example: 1cm it has equal length in every device like mobile, computer, tv etc.
+      relative sizing -> We can change the size or length example: Assume that parent ha 100px, we are creating a child and we are giving child 50% then it will take 50% of length from parent -->
+    <div class="box">Welcome to CodeHelp!</div>
+    <br />
+    <div class="parent">
+      <div class="child">CHILD</div>
+    </div>
+    <br />
+    <div class="container">Welcome to CodeHelp#</div>
+    <br />
+    <div class="box1">Welcome to codeHelp*</div>
+    <!--   Findout what is the difference between Physical pixel and Logical Pixel -->
+    <div class="container123">
+      <div class="box123">
+        Welcome to CodeHelp!
+        <!--  Here the Welcome to CodeHelp! size increased to 100px, because container123 as parent and box123 as child,
+                  container width is 10px and box width is 10em, the logic of 10 em is 10*parent size so that’s why it is showing as 100px
+                  by default 1em =10px if we not specify any font size value. -->
+      </div>
+    </div>
+  </body>
+</html>

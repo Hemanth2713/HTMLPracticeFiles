@@ -1,0 +1,35 @@
+/* CSS styles */
+h1 {
+    font-family: Impact, sans-serif;
+    color: #CE5937;
+    }
+    .box{
+      border: 2px solid black;
+      width:25%;
+    }
+    .parent{
+      border:2px solid black;
+      background-color:beige;
+    }
+    .child{
+      border:2px solid red;
+      background-color:aqua;
+      width:25%
+    }
+    /* .container{
+      border:2px solid green;
+      background-color:beige;
+    view port -> It is the Display  of the Desktop, it just size of the desktop window height and width
+      height:100vh; Here it is displaying the 100% height and by default it is taking width also 100%. If we want we can change the width
+      width:50vw;
+    } */
+    
+    .container123{
+      font-size: 10px;
+    }
+    .box123{
+      font-size:10em;
+      /* Here the Welcome to CodeHelp! size increased to 100px, because container123 as parent and  bpx 123 as child,
+      container width is 10px and box width is 10em, the logic of 10 em is 10*parent size so thats why it is showing as 100px
+      by default 1em =10px if we not specify any font size value. */
+    } 

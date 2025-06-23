@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: none;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    overflow-x: none;
+}
+
+.navcontainer {
+    width: 100vw;
+    background-color: #1d0808;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flexbox to space out elements */
+#navlist {
+    padding: 15px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Push Recipe Details to the extreme left */
+#navlogo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Push navigation links to the extreme right */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    margin-left: auto; /* Forces links to the extreme right */
+}
+
+/* Navigation links styling */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.contentBox {
+    width: 70%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px; /* Adds some spacing inside */
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2), -10px 0 20px rgba(0, 0, 0, 0.2); /* Black-Grey Shadows */
+    border-radius: 8px; /* Slightly rounded edges for a smoother look */
+}
+
+.recipe {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Left Box - Ingredients & Steps */
+.leftbox {
+    width: 60%;
+    text-align: left;
+}
+
+/* Right Box - Image */
+.rightbox {
+    width: 40%;
+    text-align: center;
+}
+
+/* Add spacing for better readability */
+.rightbox h2,
+.rightbox h3 {
+    margin-bottom: 15px; /* Space below headings */
+    line-height: 1.6; /* Increased line spacing */
+}
+
+.rightbox ul,
+.rightbox ol {
+    margin-bottom: 15px; /* Space below lists */
+    line-height: 1.8; /* Adds space between list items */
+}
+
+.rightbox li {
+    margin-bottom: 10px; /* Extra gap between list items */
+}
+
+/* Increase spacing between paragraphs */
+.rightbox p {
+    margin-bottom: 15px;
+    line-height: 1.8; /* Better readability */
+}
+
+/* Curved image edges */
+.rightbox img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px; /* Curved edges */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footerBox {
+    width: 100%;
+    background-color: #1d0808;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerPara {
+    color: white;
+    font-size: 1.2rem;
+}

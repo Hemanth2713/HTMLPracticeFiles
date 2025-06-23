@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 400px;
+            width: 400px;
+            background-color: rgb(171, 164, 232);
+            border: 3px solid black; /* Added 'solid' to properly display the border */
+        }
+
+        /* Media Queries allow us to apply different CSS styles based on the screen size or device type. 
+           This helps create responsive designs that adapt to various devices such as mobiles, tablets, and desktops.
+        */
+
+        /* Example 1: Apply styles when the screen width is at least 500px */
+        /* @media (min-width:500px) {
+            .box {
+                background-color: green;
+            }
+        } */
+
+        /* Example 2: Apply styles when the screen width is at most 500px */
+        /* @media (max-width:500px) {
+            .box {
+                background-color: green;
+            }
+        } */
+
+        /* Example 3: Apply styles when the screen width is between 300px and 500px */
+        @media (min-width: 300px) and (max-width: 500px) {
+            .box {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- In this task, we will learn how the same website appears on different devices such as mobile, desktop, and tablets. -->
+    <!-- Based on the display size, we can apply different CSS styles. We can achieve this using Media Queries. -->
+
+    <div class="box">
+        Hello World
+    </div>
+</body>
+</html>

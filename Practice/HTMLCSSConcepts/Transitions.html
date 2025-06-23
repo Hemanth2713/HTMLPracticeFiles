@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .box {
+            height: 400px;
+            width: 400px;
+            background-color: beige;
+            border: 3px solid black;
+
+            /* Correct transition shorthand notation */
+            transition: all 4s ease-in-out 1s; 
+
+            /* Transition Details */
+            transition-property: all; /* Applies transition to all properties */
+            transition-duration: 4s; /* Sets transition time */
+            transition-delay: 1s; /* Waits 1 second before starting */
+            transition-timing-function: linear; /* Moves at a constant speed */
+
+            /* Short hand notation */
+            /* Apply to 1 property */
+            /* property name | duration */
+            /* transition: margin-right 4s; (Removed as it conflicts with 'all') */
+
+            /* property name | duration | delay */
+            /* transition: margin-right 4s 1s; (Removed for consistency) */
+
+            /* property name | duration | easing function */
+            /* transition: margin-right 4s ease-in-out; (Handled by 'all') */
+
+            /* property name | duration | easing function | delay */
+            /* transition: margin-right 4s ease-in-out 1s; (Handled by 'all') */
+
+            /* Invalid transition (display is not animatable) */
+            /* transition: display 4s allow-discrete; (Removed to avoid errors) */
+        }
+
+        .box:hover {
+            width: 1200px;
+            height: 900px;
+            background-color: #3985dc;
+        }
+    </style>
+</head>
+<body>
+    <!-- /* Definition of Transition:
+   - A transition allows smooth animation between CSS property changes over a specified duration.
+
+   Available Transition Properties:
+   - transition-property: Defines which CSS property will undergo a transition.
+   - transition-duration: Specifies the time (in seconds or milliseconds) the transition takes.
+   - transition-timing-function: Controls the acceleration and deceleration of the transition.
+   - transition-delay: Sets a waiting period before the transition starts.
+   - transition: A shorthand property to define all transition settings in one declaration.
+   - inherit: Takes the transition settings from its parent element.
+   - initial: Resets the transition property to its default value (none).
+   - unset: Removes any transition applied, acting as either inherit or initial.
+
+   Shorthand Notation Format:
+   - transition: <property> <duration> <timing-function> <delay>;
+
+   Example:
+   - transition: all 0.5s ease-in-out 0.2s;
+*/ -->
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container2 {
+            background-color: beige;
+            border: 5px solid black;
+            height: 500px;
+
+            /* =======================================
+               Flex Property: Controls item resizing
+               ======================================= */
+            /* The flex property in Flexbox is a shorthand for flex-grow, flex-shrink, and flex-basis.
+               Syntax: flex: <flex-grow> <flex-shrink> <flex-basis>;
+               - flex-grow: Defines how much a flex item can grow relative to others (default: 0, no growth).
+               - flex-shrink: Defines how much a flex item can shrink when space is limited (default: 1, can shrink).
+               - flex-basis: Sets the initial size of a flex item before growth/shrinkage (default: auto). */
+
+            display: flex; /* By default, flex direction is row */  
+            
+            /* =======================================
+               Flex Direction: Controls main axis flow
+               ======================================= */
+            flex-direction: row; /* Default is row */
+            /* Available values:
+               - row (default): Items placed in a horizontal row.
+               - column: Converts the row into a column format.
+               - row-reverse: Reverses the order in a row format.
+               - column-reverse: Reverses the order in a column format. */
+            
+            /* =======================================
+               Flex Wrap: Controls item wrapping behavior
+               ======================================= */
+            flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
+            /* Available values:
+               - nowrap (default): All items stay in a single line.
+               - wrap: Items wrap to the next line if needed.
+               - wrap-reverse: Wraps items but in reverse order. */
+            
+            /* =======================================
+               Flex Flow: Shorthand for direction & wrap
+               ======================================= */
+            flex-flow: row wrap; /* Combines flex-direction and flex-wrap */
+
+            /* =======================================
+               Justify Content: Aligns items along main axis
+               ======================================= */
+            justify-content: space-evenly;
+            /* Available values:
+               - flex-start (default): Items align at the start.
+               - flex-end: Items align at the end.
+               - center: Items align at the center.
+               - space-between: Items are evenly distributed, no gap at edges.
+               - space-around: Equal spacing around each item.
+               - space-evenly: Equal spacing between AND around items. */
+
+            /* =======================================
+               Align Items: Aligns items along cross axis
+               ======================================= */
+            align-items: center;
+            /* Available values:
+               - flex-start: Aligns items at the start (top for row, left for column).
+               - flex-end: Aligns items at the end (bottom for row, right for column).
+               - center: Centers items along the cross axis.
+               - baseline: Aligns items based on their text baselines.
+               - stretch (default): Stretches items to fill container. */
+
+            /* =======================================
+               Align Content: Controls multi-line spacing
+               ======================================= */
+            align-content: center; /* Centers flex lines when wrapping occurs */
+            /* Available values:
+               - flex-start: Lines are packed at the start.
+               - flex-end: Lines are packed at the end.
+               - center: Lines are packed at the center.
+               - space-between: Even spacing without edges.
+               - space-around: Equal spacing around lines.
+               - space-evenly: Equal spacing between AND around lines.
+               - stretch (default): Stretches lines to fill container. */
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        /* ====================
+           Individual Box Colors
+           ==================== */
+        #box1 { background-color: #795050; }
+        #box2 { background-color: #c58744; }
+        #box3 { background-color: #6ebacd; }
+        #box4 { background-color: #e64c4c; }
+    </style>
+</head>
+<body>
+    <!-- =================================
+         Flex Box -> 1D Layout Method
+         ================================= -->
+    <p><strong>Flex Box Concept: </strong>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox">FlexBox Documentation</a>
+    </p>
+
+    <!-- =================================
+         Flexbox Terminology Section
+         ================================= -->
+    <div class="container1">
+        <h2>Flex Box Dimensions</h2>
+        <img src="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox/flex_terms.png" 
+             alt="Flex Box Details">
+    </div>
+
+    <!-- ====================
+         Flexbox Container
+         ==================== -->
+    <div class="container2">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div>
+    </div>
+</body>
+</html>
