@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Styling</title>
+    <style>
+        /* CSS styles */
+        h1 {
+            font-family: Impact, sans-serif;
+            color: #CE5937;
+        }
+        P {
+            color: brown;
+        }
+        /* If we Specify the id then in the css format we have start it with #idname */
+        #article1 {
+            background-color: green;
+        }
+        /* If we are using the class then we have to specify .classname */
+        .paraClass {
+            background-color: yellow;
+        }
+        /* by using the below format we can grouping format i.e., here we are setting width size 500px fro both paragraph and article */
+        p, article {
+            width: 500px;
+        }
+        /* This Format is useful that the paragraph and article have the same names and we want specify the text align center for paragraph only then we have to use this format */
+        p.paraClass {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML CSS JS</h1>
+    <article id="article1">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </article>
+    <p class="paraClass">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <article>
+        <p class="paraClass">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </article>
+</body>
+</html>
